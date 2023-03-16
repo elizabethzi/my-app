@@ -1,0 +1,130 @@
+
+// En este archivo SCSS o SASS le estoy indicando todos los estilos que tendra mi form, siendo estos exportado a mi App.css
+
+.body-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://st3.depositphotos.com/29384342/50305/i/600/depositphotos_503058620-stock-photo-low-angle-view-skyscrapers-new.jpg');
+    background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box {
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background-color: #222;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.box form {
+    position: absolute;
+    inset: 4px;
+    background-color: #373b617a;
+    padding: 30px 30px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.box form h1 {
+
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 0.10em;
+}
+
+.box form .input-box {
+    position: relative;
+    width: 300px;
+    margin-top: 30px;
+}
+
+.box form .input-box input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #222;
+    font-size: 1em;
+    transition: 0.5s;
+    z-index: 5;
+
+
+}
+
+.box form .input-box span {
+    pointer-events: none;
+    color: #FFFFFF;
+    transition: 0.5s;
+    font-weight: 500;
+    position: absolute;
+    padding: 20px 0px;
+}
+
+
+.box form .input-box i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.box form .input-box input:valid~i,
+.box form .input-box input:focus~i {
+
+    height: 40px;
+
+}
+
+.box form .link {
+    display: flex;
+    justify-content: end;
+    margin: 5px 24px;
+}
+
+.box form .link a {
+    font-weight: 500;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.box form .link a:hover {
+    font-weight: 500;
+    color: #a7d5e5;
+
+}
+
+.login {
+
+    padding: 13px 5px;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    font-weight: 600;
+    border-radius: 3px;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    outline: none;
+    color: #373b61c5;
+}
+
+.login:hover{
+    background-color: var(--azulOscuro);
+border: 2px solid #ffffff;
+color: #FFFFFF;
+}
