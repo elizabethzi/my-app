@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('https://st3.depositphotos.com/29384342/50305/i/600/depositphotos_503058620-stock-photo-low-angle-view-skyscrapers-new.jpg');
+    background: url('https://www.gradhermetic.com/sites/default/files/2020-04/Edificios%20de%20cristal.%20%20En%20Gradhermetic%20nos%20cuestionamos%20si%20son%20realmente%20eficientes.jpg');
     background-repeat: no-repeat;
   background-size: cover;
 }
@@ -15,20 +15,22 @@
     position: relative;
     width: 380px;
     height: 420px;
-    background-color: #222;
-    color: #FFFFFF;
+    color: #222;
     border-radius: 8px;
+    
 }
 
-.box form {
+form {
     position: absolute;
     inset: 4px;
-    background-color: #373b617a;
+    background-color: transparent;
     padding: 30px 30px;
-    border-radius: 8px;
+    border-radius: 3px;
     z-index: 2;
     display: flex;
     flex-direction: column;
+    border: 2px solid rgba(146, 126, 101, 0.199);
+    backdrop-filter: blur(5px);
 }
 
 .box form h1 {
@@ -52,7 +54,7 @@
     outline: none;
     box-shadow: none;
     border: none;
-    color: #222;
+    color: #FFFFFF;
     font-size: 1em;
     transition: 0.5s;
     z-index: 5;
@@ -62,7 +64,7 @@
 
 .box form .input-box span {
     pointer-events: none;
-    color: #FFFFFF;
+    color: #222;
     transition: 0.5s;
     font-weight: 500;
     position: absolute;
@@ -76,7 +78,7 @@
     bottom: 0;
     width: 100%;
     height: 2px;
-    background: #FFFFFF;
+    background: #222;
     border-radius: 4px;
     overflow: hidden;
     transition: 0.5s;
@@ -86,6 +88,7 @@
 .box form .input-box input:valid~i,
 .box form .input-box input:focus~i {
 
+background-color: #222;
     height: 40px;
 
 }
@@ -98,13 +101,13 @@
 
 .box form .link a {
     font-weight: 500;
-    color: #FFFFFF;
+    color: #222;
     transition: 0.5s;
 }
 
 .box form .link a:hover {
     font-weight: 500;
-    color: #a7d5e5;
+    color: rgb(146, 114, 55);
 
 }
 
@@ -112,7 +115,7 @@
 
     padding: 13px 5px;
     font-size: 16px;
-    background-color: #FFFFFF;
+    background-color: #292626;
     font-weight: 600;
     border-radius: 3px;
     width: 150px;
@@ -120,11 +123,12 @@
     cursor: pointer;
     transition: 0.5s;
     outline: none;
-    color: #373b61c5;
+    color: #FFFFFF;
+border: 2px solid transparent;
 }
 
 .login:hover{
-    background-color: var(--azulOscuro);
-border: 2px solid #ffffff;
-color: #FFFFFF;
+    background-color: rgb(209, 163, 80);
+color: #222;
+
 }
